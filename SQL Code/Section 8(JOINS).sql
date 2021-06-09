@@ -1,0 +1,76 @@
+-- JOINS --
+
+--NATURAL JOIN
+
+-- DISPLAY DEPT_NAME,CITY,STREET ADRESS AND COUNTRY NAME FOR ALL DEPARTMENTS
+
+SELECT Department_Name, City, Street_Address, Country_Name
+FROM Departments
+NATURAL JOIN Locations 
+NATURAL JOIN Countries
+ORDER BY 1;
+
+-- DISPLAY LAST NAME, DEPT_ID , JOB_ID AND JOB_TITLE  FOR ALL EMPLOYEES IN DEPT(10,20,90)
+
+SELECT Last_Name, Department_ID, Job_ID, Job_Title
+FROM EMPLOYEES
+NATURAL JOIN Jobs
+WHERE DEPARTMENT_ID IN (10,20,90)
+ORDER BY 2;
+
+-- INNER JOIN using USING() clause --
+
+-- DISPLAY DPET_NAME, CITY, STREET ADDRESS, COUNTRY_NAME OF ALL DEPTS
+
+SELECT Department_Name, City, Street_Address, Country_Name
+FROM Departments
+JOIN Locations USING (Location_ID)
+JOIN Countries USING (Country_ID);
+
+SELECT Department_Name, Department_ID, Salary, Max_salary
+FROM DEPARTMENTS
+JOIN EMPLOYEES USING(DEPARTMENT_ID)
+JOIN JOBS USING (JOB_ID);
+
+-- DISPLAY COUNRTY_NAME,,ID, REGION NAME FOR ALL COUNTRIES
+
+SELECT Country_ID, Country_Name, Region_Name
+FROM COUNTRIES
+JOIN Regions USING (Region_ID)
+ORDER BY 2;
+
+SELECT e.Last_Name, d.Department_ID, d.Department_Name, l.City
+FROM Employees e
+JOIN Departments d ON (e.Department_ID = d.Department_ID)
+JOIN Locations l ON( d.LOCATION_ID = l.LOCATION_ID)
+WHERE City = 'London';
+
+
+-- INNER JOIN USING SELF JOIN --
+
+SELECT E.Employee_ID, E.Last_Name,M.Employee_ID AS "Manager ID" , M.Last_Name AS "Manager Name" 
+FROM Employees E
+JOIN Employees M ON ( E.Manager_ID = M.Employee_ID)
+ORDER BY E.Employee_ID;
+
+SELECT E.Last_Name,D.Department_ID, D.Department_Name 
+FROM Employees E
+JOIN Departments D ON (E.DEPARTMENT_ID = D.DEPARTMENT_ID)
+ORDER BY 1;
+
+-- OUTER JOIN --
+-- FULL OUTER JOIN --
+
+-- QUERY TO DISPLAY CITY NAME, COUNTRY NAME FOR ALL LAOCTIONS WHICH DON'T HAVE COUNTRIES AND COUT=NTRIES THAT HAVE NO LOCATIONS --
+
+SELECT City, Country_Name
+FROM LOCATIONS 
+FULL OUTER JOIN COUNTRIES ON(LOCATIONS.Country_ID = COUNTRIES.Country_ID)
+ORDER BY 1;
+
+
+-- CROSS JOIN --
+SELECT LAST_NAME, D.DEPARTMENT_ID, DEPARTMENT_NAME
+FROM EMPLOYEES
+CROSS JOIN DEPARTMENTS D
+ORDER BY 2;
