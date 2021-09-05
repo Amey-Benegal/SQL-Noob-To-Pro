@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)file:///C:/Users/admi%20n/Desktop/NEEEEEEEEEEEEEETTTTTTTTTTTTT.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+
+</title>
+    <!--[if lt IE 9]>
+  <script src="../Scripts/html5shiv.js"></script>
+  <![endif]-->
+    <link href="./NEET ID_files/main.css" rel="stylesheet" type="text/css"><link href="./NEET ID_files/main-style.css" rel="stylesheet" type="text/css"><link href="./NEET ID_files/VarCSS.css" rel="stylesheet" type="text/css"><link href="./NEET ID_files/grid.css" rel="stylesheet" type="text/css">
+    <script language="javascript" type="text/javascript">
+
+        function checkBrowser() {
+            //if (navigator.appName == 'Microsoft Internet Explorer') {
+            document.getElementById("aPrint").style.visibility = "hidden";
+            //            document.getElementById("aClose").style.visibility = "hidden";
+            window.print();
+            document.getElementById("aPrint").style.visibility = "visible";
+            //            document.getElementById("aClose").style.visibility = "visible";
+            //            }
+            //            else {
+            //                alert('Kind Attention!\n\nPrinting is compatible with "Microsoft Internet Explorer", so please use Microsoft Internet Explorer to print your Admit Card .');
+            //}
+        }
+        function keyWhat(e) {
+            if (navigator.appName == 'Microsoft Internet Explorer') {
+                //For shift, ctrl and alt keys
+                if (event.keyCode == 16 || event.keyCode == 17 || event.keyCode == 18) {
+                    alert("You Can't use ctrl,shift or alt keys on page");
+                    return false;
+                }
+            }
+        } //end of function
+        document.onkeydown = keyWhat;
+    </script>
+    <style type="text/css" media="print">
+        body
+        {
+            width: 100%;
+        }
+        @page
+        {
+            size: auto; /* auto is the initial value */ /* this affects the margin in the printer settings */
+            margin: 15mm 15mm 15mm 15mm;
+        }
+    </style>
+    <style type="text/css">
+        .break
+        {
+            page-break-before: always;
+        }
+        .btnSubmit
+        {
+            color: #fff;
+            font-size: 11px;
+            font-family: Tahoma;
+            font-weight: bold;
+            padding: 5px 20px;
+            background: url(../Images/btn.jpg) no-repeat center center;
+            border: 0;
+        }
+        
+        input[type=checkbox].css-checkbox
+        {
+            display: none;
+        }
+        
+        input[type=checkbox].css-checkbox + label.css-label
+        {
+            padding-left: 40px;
+            height: 35px;
+            display: inline-block;
+            line-height: 35px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            font-size: 14px;
+            vertical-align: middle;
+            cursor: pointer;
+            font-weight: 400;
+        }
+        
+        input[type=checkbox].css-checkbox:checked + label.css-label
+        {
+            background-position: 0 -35px;
+        }
+        label.css-label
+        {
+            background-image: url(../Images/check.png);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+<link href="./NEET ID_files/main-style.css" type="text/css" rel="stylesheet"><link href="./NEET ID_files/superfish.css" type="text/css" rel="stylesheet"><link href="./NEET ID_files/VarCSS.css" type="text/css" rel="stylesheet"><link href="./NEET ID_files/WebResource.axd" type="text/css" rel="stylesheet"></head>
+<body>
+    <form name="form1" method="post" action="https://cbseneet.nic.in/cbseneet/online/AdmitCardFinalShow.aspx" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./NEET ID_files/WebResource(1).axd" type="text/javascript"></script>
+
+
+<script src="./NEET ID_files/ScriptResource.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./NEET ID_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(3).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(4).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(5).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(6).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(7).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(8).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(9).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(10).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(11).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(12).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(13).axd" type="text/javascript"></script>
+<script src="./NEET ID_files/ScriptResource(14).axd" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D41E6193">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="1KIbks7YDqDYS/ug+6+/N/vxOVtyAn7KgzuBrU0uPWI7uo4zVsrvLlhF1vezebapr1d++kPgFKq1Wbj9HWuwQBWxOTdlmDb7MXPicQYXzgJP7HTRD9QYDAi98RoZNDtERXxuEavNI0dXQxvF+m+iYzIsxdg=">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sd', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+
+    <center>
+        
+        <div id="pnladmitcard">
+	
+            <table cellspacing="0" cellpadding="0" width="1002px" style="border: 2px SOlid #000">
+                <tbody><tr>
+                    <td>
+                        <table cellpadding="0" class="admit_cardt" cellspacing="0" style="width: 1000px;
+                            font-size: 1em; border: 5px solid #999; background-color: #Fff; height: 1000px">
+                            <tbody><tr>
+                                <td style="border-bottom: none;" colspan="3" align="left" valign="top">
+                                    <a id="aPrint" href="javascript:checkBrowser();" style="visibility: visible;"><b>Click Here to Print This Page</b></a>
+                                </td>
+                                <td style="border-left: none; border-bottom: none;" align="right" valign="top">
+                                    
+                                    
+                                    <a href="https://cbseneet.nic.in/cbseneet/Welcome.aspx" id="aClose" target="_parent">
+                                        <b><u>Home</u></b></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-right: none; padding: 0px;" align="left" valign="top" colspan="4">
+                                    
+                                    <div class="cleaner">
+                                    </div>
+                                    <div class="banner_bg">
+                                        <div class="banner">
+                                            <div class="logo">
+                                                <img src="./NEET ID_files/header.png" alt="cbse">
+                                            </div>
+                                            <div class="banner_text" style="float: none;">
+                                                <h1 style="margin-top: 2px; line-height: 25px; font-size: 23px;">
+                                                    राष्ट्रीय पात्रता व प्रवेश परीक्षा (यूजी)
+                                                </h1>
+                                                <h2 style="line-height: 20px; font-size: 20px;">
+                                                    NATIONAL ELIGIBILITY CUM ENTRANCE TEST (UG)
+                                                </h2>
+                                                <span></span>
+                                                <h2 style="line-height: 20px; font-size: 20px;">
+                                                    केन्द्रीय माध्यमिक शिक्षा बोर्ड ,दिल्ली
+                                                </h2>
+                                                <h2 style="line-height: 20px;">
+                                                    Central Board of Secondary Education, Delhi
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; background-color: #8e4b26; color: White; padding: 0px;" align="center" valign="top" colspan="4">
+                                    Provisional Admit Card – NEET (UG), 2018
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 16px; font-weight: bold; color: Red;" colspan="4" align="center">
+                                    BARRED ITEMS ARE NOT ALLOWED INSIDE EXAMINATION CENTRES.
+                                    <br>
+                                    CANDIDATES FOUND IN POSSESSION WILL BE PROSECUTED AS PER RULES FOR USING UNFAIR
+                                    MEANS.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 16px; font-weight: bold; color: Red;" colspan="4" align="center">
+                                    OBEY DRESS CODE FOR APPEARING IN NEET (UG), 2018
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 16px; font-weight: bold; color: Red;" colspan="4" align="center">
+                                    LAST ENTRY IN EXAM CENTRE: 09.30 AM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 16px; font-weight: bold; color: Red;" colspan="4" align="center">
+                                    VISIT THE CENTRE ONE DAY BEFORE THE EXAMINATION TO CONFIRM THE LOCATION OF CENTRE
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 16px; font-weight: bold; color: Red;" colspan="4" align="center">
+                                    TIME OF CLOCKS AT CENTRES HAS BEEN SET WITH THE CLOCK AVAILABLE ON NEET WEBSITE
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td width="100%" align="center" colspan="4">
+                                    <table width="100%" cellpadding="0" cellspacing="0" style="height: 1000px">
+                                        <tbody><tr>
+                                            <td align="left" valign="top" width="33%" colspan="2">
+                                                <strong>CANDIDATE’S NAME </strong>&nbsp;<br>
+                                                <br>
+                                                <span id="lblcandName" style="font-size:16pt;">AMEY S BENEGAL</span>
+                                            </td>
+                                            <td align="center" rowspan="3" valign="middle" width="33%">
+                                                <img id="Image1" src="./NEET ID_files/ShowImage.ashx" style="height:200px;width:180px;border-width:0px;">&nbsp;&nbsp;&nbsp;
+                                            </td>
+                                            <td align="center" valign="top" width="33%">
+                                                <strong>REGISTRATION NO :</strong>
+                                                <br>
+                                                <br>
+                                                <span id="lblRegNo" style="font-size:18pt;color: Black;">41007002</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" width="33%" colspan="2">
+                                                <strong>FATHER’S NAME </strong>&nbsp;<br>
+                                                <br>
+                                                <span id="lblFatherName" style="font-size:16pt;">SATISH BENEGAL</span>
+                                            </td>
+                                            <td align="center" valign="top" width="33%">
+                                                <strong>ROLL NUMBER </strong>&nbsp;<br>
+                                                <span id="lblcandrollno" style="font-size:30pt;font-weight: 200;
+                                                    color: Black">505018444</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" width="16.5%">
+                                                <strong>DATE OF BIRTH : </strong>
+                                                <br>
+                                                <br>
+                                                <span id="lblDob" style="font-size:12pt;">22/02/2000</span>
+                                            </td>
+                                            <td align="left" valign="top" width="16.5%">
+                                                <strong>GENDER :</strong><br>
+                                                <br>
+                                                <span id="lblGender" style="font-size:12pt;">MALE</span>
+                                            </td>
+                                            <td align="center" valign="top" width="33%">
+                                                <img id="ImageQRCode" src="data:image/png;base64,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" style="height:80px;width:80px;border-width:0px;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" width="16.5%">
+                                                <strong>CATEGORY : </strong>
+                                                <br>
+                                                <br>
+                                                <span id="lblcandCategory" style="font-size:12pt;">UR</span>
+                                            </td>
+                                            <td align="left" valign="top" width="16.5%">
+                                                <strong>SUB CATEGORY : </strong>
+                                                <br>
+                                                <br>
+                                                <span id="lblSubCat" style="font-size:12pt;">NO</span>
+                                            </td>
+                                            <td align="center" valign="top" width="33%">
+                                                <strong>EXAMINATION DATE</strong>
+                                                <br>
+                                                <br>
+                                                <b>
+                                                    <span id="lbldate" style="font-size:20pt;font-weight: 200;">06/05/2018 (Sunday)</span></b>
+                                            </td>
+                                            <td align="left" valign="top" width="33%">
+                                                <strong>Entry Slot : </strong>
+                                                <span id="lblSlot" style="font-size:14pt;font-weight:bold;">B<br>8.30 AM TO 9.30 AM</span>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" rowspan="2" width="33%" colspan="2">
+                                                <b>ADDRESS OF CANDIDATE</b>
+                                                <br>
+                                                <br>
+                                                <span id="lblcandAddress" style="font-size:12pt;">NO. 91 F1 CANARA BANK COLONY NEAR CAUVERY HIGH SCHOOL BANGALORE CITY BANGALORE SOUTH KARNATAKA-560072</span>
+                                                <br>
+                                            </td>
+                                            <td align="center" valign="top" width="33%">
+                                                <strong>EXAMINATION TIMING</strong>
+                                                <br>
+                                                <br>
+                                                <b><span style="font-weight: 200; font-size: 20pt">
+                                                    10:00 AM TO 01:00 PM</span> </b>
+                                            </td>
+                                            <td align="left" valign="top" width="33%">
+                                                
+                                                <strong>QUESTION PAPER MEDIUM :</strong><br>
+                                                <br>
+                                                <span id="lblQMed" style="font-size:14pt;">English</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="middle" style="color: Red" width="33%" rowspan="2">
+                                                PLEASE AFFIX PHOTOGRAPH AS UPLOADED IN APPLICATION FORM
+                                            </td>
+                                            <td align="left" valign="top" width="33%">
+                                                <strong>EXAMINATION CENTRE NO. :</strong>
+                                                <br>
+                                                <span id="lblCenter" style="font-size:14pt;">505037</span>
+                                                &nbsp;<br>
+                                                <br>
+                                                <strong>CENTRE ADDRESS: </strong>
+                                                <br>
+                                                <span id="lblcenteraddress" style="font-size:12pt;">VENKAT INTERNATIONAL PUBLIC SCHOOL # 331/A, 66TH CROSS, 5TH BLOCK, RAJAJINAGAR, NEAR BHASHYAM CIRCLE BANGALORE KARNATAKA-560010</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="bottom" height="50px" width="33%" colspan="2">
+                                                <span style="font-size: 13px; font-weight: bold; vertical-align: top">I agree to abide
+                                                    by all the rules governing the NEET (UG), 2018 as contained in Information Bulletin.</span>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <b><span style="font-size: 1em">SIGNATURE OF CANDIDATE
+                                                    <br>
+                                                    (In Exam Room)</span></b>
+                                            </td>
+                                            <td align="left" valign="middle" height="50px" width="33%">
+                                                <b>I.P. ADDRESS :</b>
+                                                <span id="lblIP" style="font-size:12pt;">106.51.235.118</span>
+                                                <br>
+                                                <b>Date :</b><span id="lblDateAdCard" style="font-size:12pt;">30/04/2018</span>
+                                                <br>
+                                                <b>Time :</b><span id="lblTime" style="font-size:12pt;">9:43:03 PM</span>
+                                                <br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" height="50px" valign="top" width="33%" colspan="2">
+                                                
+                                                <span style="font-size: 13px; font-weight: bold;">I affirm that my ward will not 
+                                                indulge in unfair means activites &amp; abide by all the rules governing the NEET 
+                                                (UG), 2018.
+                                                </span>
+                                                <br>
+                                                <br>
+                                                 <br>
+                                                <br>
+                                                
+                                                <span style="font-weight: bold; vertical-align: bottom">
+                                                    <br>
+                                                    SIGNATURE OF PARENT</span>
+                                            </td>
+                                            <td align="center" valign="bottom" height="50px" width="33%">
+                                                <img id="Image2" src="./NEET ID_files/ShowImage(1).ashx" style="height:90px;width:150px;border-width:0px;"><br>
+                                                <b><span>SIGNATURE OF CANDIDATE<br>
+                                                    (In Record)</span></b>
+                                            </td>
+                                            <td align="center" valign="bottom" height="50px" width="20%">
+                                                <img src="./NEET ID_files/sign.jpg" style="width: 140px; height: 70px"><br>
+                                                <b><span>DIRECTOR (NEET)</span></b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="middle" colspan="4" style="color: White; background-color: Red;
+                                                font-size: font-weight: bold;">
+                                                Important Information : Reporting Time at the Examination centre : From 7:30 am
+                                                to 8:30 am or From 8:30 am to 9:30 am
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="middle" colspan="4" style="color: Red; background-color: White;font-weight:bold">
+                                                PLEASE READ INSTRUCTION PRINTED ALONG WITH ADMIT CARD.
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table cellspacing="0" cellpadding="0" width="1002px" style="border: 2px SOlid #000;" class="break">
+                <tbody><tr>
+                    <td align="center">
+                        <table cellspacing="0" cellpadding="0" width="1000px" style="height: 100%; background-color: #Fff;
+                            height: 1000px
+                            border: 5px solid #999;" border="1" align="center">
+                            <tbody><tr>
+                                <td>
+                                    <div align="center">
+                                        <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%" bordercolor="navy">
+                                            <tbody><tr>
+                                                <td align="center" valign="middle" style="color: White; background-color: Red; font-weight: bold;">
+                                                    <span style="font-size: 26px">IMPORTANT INSTRUCTIONS FOR NEET (UG), 2018 </span>
+                                                    <br>
+                                                    <span style="font-size: 22px">( CANDIDATES MAY READ AND ADHERE TO THESE INSTRUCTIONS)</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left" style="font-size: 20px">
+                                                    <ol>
+                                                        <li><span style="color: Red; text-align: left;"><b>NO COMMUNICATION DEVICE/MOBILE IS
+                                                            ALLOWED INSIDE EXAMINATION CENTRE.</b></span></li>
+                                                        <li><span style="color: Red; text-align: left;"><b>STRICTLY FOLLOW THE DRESS CODE.</b></span></li>
+                                                        <li>Candidates and their parents are requested to read the Information Bulletin carefully
+                                                            before the examination. Candidates are advised to adhere to all the instructions
+                                                            given in the Bulletin. Any Infringement of Instructions shall entail disciplinary
+                                                            action including no entry in the examination centre and ban from future NEET (UG)
+                                                            examinations.</li>
+                                                        <li>There are two entry slot i.e. “A” &amp; “B”. For slot “A”, entry time is from 07:30
+                                                            am to 08.30 am and for slot “B”, entry time is from 08:30 am to 09.30 am. Reach
+                                                            centre as per your allotted entry slot. This will avoid rush at entry during summer.</li>
+                                                        <li><span style="color: Red; text-align: left;">It is advised to visit the centre a
+                                                            day before the examination to confirm the location, distance etc. of centre to avoid
+                                                            delay. It is the responsibility of the candidate to reach the centre on time. No
+                                                            candidate, whatsoever is the reason, shall be allowed entry in examination centre
+                                                            after 9.30 am. Check the time with the clock available on NEET website.</span></li>
+                                                        <li>Parents may ensure that their ward is leaving for examination as per instructions
+                                                            given in the Bulletin especially in Chapter 5, 9 &amp; 11. They shall also ensure that
+                                                            they are reaching the examination centre as per entry slot on the day of examination.
+                                                            For the same, your ward should leave the home, well in advance, considering traffic,
+                                                            location of the centre and weather condition etc. to avoid any problem in reaching
+                                                            late to the centre. <span style="color: Red; text-align: left;">Parent may sign in Admit
+                                                                Card as an undertaking that they will ensure compliance of NEET examination rules.</span></li>
+                                                        <li>Material to be brought on the day of examination (i) Valid Admit Card, (ii) Passport
+                                                            Size Photograph to be affixed on attendance sheet. No other document is required
+                                                            to be carry</li>
+                                                        <li>No arrangement will be made at the centres for keeping any article/item/mobile/purse/Key
+                                                            etc. of the candidates.</li>
+                                                        <li>Candidates shall be provided Blue/Black ball point pen at the examination centre
+                                                            to write particulars on the cover page of Test Booklet, OMR sheet and for darkening
+                                                            the circles of responses.</li>
+                                                        <li>Candidates will strictly follow all the instructions issued to check unfair mean
+                                                            activities in the examination. Candidate will be frisked before commencement of
+                                                            the examination. Physically &amp; with scanners.</li>
+                                                        <li>Please affix your photograph in Admit Card as uploaded on your online application
+                                                            form.</li>
+                                                        <li>Candidate should check carefully that the Test Booklet Code printed on Side 2 of
+                                                            the OMR sheet is the same as printed on Test Booklet and ensure that the Test Booklet
+                                                            contains as many numbers of pages as written on the top of the cover page of the
+                                                            Test Booklet.</li>
+                                                        <li>The Candidate shall not remove any page(s) from the Test Booklet and if any page(s)
+                                                            is/are found missing from his/her test booklet, he/she will be prosecuted and shall
+                                                            be liable for criminal action.</li>
+                                                        <li>No candidate shall be allowed to use toilets in last 30 minutes of examination i.e.
+                                                            from 12.30 pm to 01.00 pm.</li>
+                                                        <li>No Candidate shall be allowed to leave the Examination Hall before concluding the
+                                                            Test.</li>
+                                                        <li>No Candidate shall be allowed to leave the Examination Hall without handing over
+                                                            the OMR sheet to the Invigilator concerned.</li>
+                                                        <li>The Admit Card is issued provisionally to the candidate subject to his/her satisfying
+                                                            the eligibility conditions.</li>
+                                                        <li>On completion of the Test, candidate must hand over duly signed OMR Sheet to the
+                                                            Invigilator and take away only the Test Booklet.</li>
+                                                        <li>Candidate must preserve the Admit Card till the allotment of seat in College/Institution.</li>
+                                                        <li>Candidate may regularly visit Board’s website <a href="http://www.cbseneet.nic.in/">
+                                                            www.cbseneet.nic.in</a> for latest updates. Candidate may also check email regularly
+                                                            till the completion of final round of Counselling.</li>
+                                                        <li>For Medium of question papers please read instructions 2(C) in chapter - 2 of Information
+                                                            Bulletin.</li>
+                                                        <li>In case of any ambiguity in translation of any of the questions, its English version
+                                                            shall be treated as final. </li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="middle" style="color: Red; background-color: White; font-size: 16pt;font-weight:bold">
+                                                    EXAMINATION CENTRES ARE ZERO TOLERANCE ZONE FOR BARRED ITEMS &amp; DRESS CODE
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        
+</div>
+        <input type="submit" name="btn1" value="Submit" id="btn1" class="btnSubmit" style="width:112px;display: none">
+        
+        <div id="pnlPopup" class="frame" style="display: none; position: fixed; z-index: 10003;">
+	
+            <div class="overlay">
+                <div class="header">
+                    Message!!
+                    <a onclick="$find(&#39;mdlPopup&#39;).hide(); return false;" id="btnClose" class="close" href="javascript:__doPostBack(&#39;btnClose&#39;,&#39;&#39;)"></a>
+                </div>
+                <div class="body" align="left">
+                    <span id="lblmsg"></span>
+                </div>
+            </div>
+        
+</div>
+    <div data-act-control-type="modalPopupBackground" id="mdlPopup_backgroundElement" class="modalBackgroundGray" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div data-act-control-type="modalPopupBackground" id="mdlPopup_backgroundElement" class="modalBackgroundGray" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10001;"></div><div data-act-control-type="modalPopupBackground" id="mdlPopup_backgroundElement" class="modalBackgroundGray" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10002;"></div></center>
+    <!--main table-->
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modalBackgroundGray","dynamicServicePath":"/cbseneet/online/AdmitCardFinalShow.aspx","id":"mdlPopup","popupControlID":"pnlPopup"}, null, null, $get("btn1"));
+});
+//]]>
+</script>
+</form>
+
+
+</body></html>
